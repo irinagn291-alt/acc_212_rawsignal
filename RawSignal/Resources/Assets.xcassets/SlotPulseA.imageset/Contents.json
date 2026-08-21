@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "SlotPulseA.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Square slot glyph PULSE-A, brutalist cyberpunk, black square, white raw frame, thick red diagonal pulse bar top-left energy, high contrast digital art, no text, no letters, no watermark"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "SlotNoise.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Square slot glyph NOISE, brutalist cyberpunk, black square, white raw jagged torn edge, scattered red static specks like analog noise, high contrast digital art, no text, no letters, no watermark"
+  }
+}

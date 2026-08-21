@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "OnboardingPulseGrid.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Vertical onboarding illustration 1, brutalist cyberpunk control room, black walls, white tape-mark floor grid, red warning strobe, raw unfinished concrete edges, digital art high contrast, no text, no letters, no watermark"
+  }
+}

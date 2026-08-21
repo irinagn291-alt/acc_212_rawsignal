@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "ShelfCrimsonBean.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Square food still as cyberpunk product tile: crimson bean pulse, dark red beans in a raw steel cup, black void, white hard shadow, high contrast digital art, no text, no watermark"
+  }
+}

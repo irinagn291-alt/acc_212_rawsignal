@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "ShelfCarbonLentil.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Square food still cyberpunk product tile: carbon lentil mash, near-black lentil puree in a raw metal tray, red underlight slit, high contrast digital art, no text, no watermark"
+  }
+}

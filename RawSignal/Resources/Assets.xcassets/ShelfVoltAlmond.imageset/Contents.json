@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "ShelfVoltAlmond.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Square food still cyberpunk product tile: volt almond paste as a dense ochre-gold paste brick, black void, white brutalist rim, red electric edge spark, high contrast digital art, no text, no watermark"
+  }
+}

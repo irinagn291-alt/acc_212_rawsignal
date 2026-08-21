@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "ShelfNeutralRice.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Square food still as cyberpunk product tile: pale rice slab like a compressed white brick, brutalist lighting, black background, thin red underglow, digital art, no text, no watermark"
+  }
+}

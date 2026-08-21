@@ -1,0 +1,15 @@
+{
+  "images": [
+    {
+      "filename": "AppIcon.png",
+      "idiom": "universal",
+      "platform": "ios",
+      "size": "1024x1024"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "Square app icon, brutalist cyberpunk, pure black field, thick raw white L-shaped corner brackets, a single vertical crimson signal spike through a 4x4 wire grid, high contrast digital art, futuristic HUD fragment, no text, no letters, no logo type, no watermark"
+  }
+}

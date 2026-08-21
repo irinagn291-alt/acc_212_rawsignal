@@ -1,0 +1,834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09463F32D6EA316F2727EFDC /* ConsumedLogModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D03F7FD07E3B73E16B6E85 /* ConsumedLogModule.swift */; };
+		148740CD1D7EC35DF7A112AA /* OnboardingSequenceScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB15A6FF2C68DFC022A4022 /* OnboardingSequenceScene.swift */; };
+		1A188C32A33C075DE8B3CAA7 /* RawSignalInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47772313BBC46F9633311EA /* RawSignalInteractorTests.swift */; };
+		1D9247D81D9D265212B2EF48 /* SignalDomainEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E0C6AF582090DA64365B4 /* SignalDomainEntities.swift */; };
+		28347B23941837C1F1719EA8 /* CatalogSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C2B3A30AD3ADE713BF9F3 /* CatalogSearchPresenter.swift */; };
+		287BB47CC711A40BFC94F6C9 /* OpenFoodFactsCatalogGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA4D0979CACDD65BB7E8F4 /* OpenFoodFactsCatalogGateway.swift */; };
+		2B661515A41CAA058096B45F /* CatalogSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A89D1983B87C915697CB1 /* CatalogSearchView.swift */; };
+		344B22F49347D78BEBCE2423 /* GridCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DDD89EBAC43305CC423E56 /* GridCipher.swift */; };
+		3860299B96CF02520D8485A0 /* SlotAssignmentModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F295607AB7EAF4B62C8CE1 /* SlotAssignmentModule.swift */; };
+		3A33868F27F81C8C3D0A08DC /* DailyIntakeDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D3219C178A1AF16F4391A9 /* DailyIntakeDisplayView.swift */; };
+		3CC90DE79D7D2929CBEF9275 /* BrutalistVisualSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD054FAA75909DBF98046A /* BrutalistVisualSystem.swift */; };
+		3D80620F8253220FE8D95953 /* GoalRevisionModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008DB5536568496FB052BAC1 /* GoalRevisionModule.swift */; };
+		3F3B5F9730D15F7E8F01E17A /* WishLedgerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE1F5910D6FADF27A35A657 /* WishLedgerModule.swift */; };
+		535DE248C96EBB2D6CB121CA /* CatalogSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1FB224CB8B3B268E636D0A /* CatalogSearchInteractor.swift */; };
+		5611CAAFC1D91A19A168F21F /* SignalLaunchPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106695E188BEEF539BC10760 /* SignalLaunchPad.swift */; };
+		5A65B0B8EA0BB28B07D622E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFAD1A7264F5AC34BA3A8E95 /* Assets.xcassets */; };
+		5B48C7F1FD2BF4D4AAC7EB0B /* SimulatorShelfSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0C45D61896E893A52482BF /* SimulatorShelfSeeder.swift */; };
+		5F4FE3452C204A924E7DA179 /* DailyIntakeDisplayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A0B1F0DCB889F04CEC7207 /* DailyIntakeDisplayPresenter.swift */; };
+		64F515EF10DFB03EFB57FC8E /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = C9B459CAAB840367B610D621 /* OFL.txt */; };
+		727F3DDF3C9366129688A877 /* CatalogSearchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15E3CA5BD5E68F8F4E3B32 /* CatalogSearchModels.swift */; };
+		781D3B274190799353C9CB55 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 44478B42A230D0C4D062A6F5 /* Alamofire */; };
+		7C14142E819E7106F5AC24D5 /* SignalGridTransitionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C32C58813CC11C46F72B1 /* SignalGridTransitionFactory.swift */; };
+		82ACD8C00ABFF353A03750C4 /* IBMPlexMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F98B23AC0B197DAC11070C1D /* IBMPlexMono-Medium.ttf */; };
+		84C64A974E0D698C8C43765F /* CatalogSearchScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5981A8AD29FB9F7BD376D /* CatalogSearchScene.swift */; };
+		8A955D8F3F0FEFDE14FEAC8E /* RawSignalApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55541279862FBB5A72689D29 /* RawSignalApplicationDelegate.swift */; };
+		9F60F2B53D29C0BFB0E18070 /* SignalCanvasHostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8028A593B3B74906630855CE /* SignalCanvasHostController.swift */; };
+		A7C0FE9C60D00E63122C0266 /* PreferenceConfigurationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482D9772ACC84715AE17AE80 /* PreferenceConfigurationModule.swift */; };
+		A9C5D4CFA47BA274207A03F0 /* SignalHorizonPlanModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993D1DD738A3C2C9A4AF392C /* SignalHorizonPlanModule.swift */; };
+		B1C3C0C1830BDFA5E61933D3 /* BrutalistChromeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F71BE72F24E7A41D078178 /* BrutalistChromeViews.swift */; };
+		B45C6C52FD90E99082D86AD6 /* ArchitectureComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8D65D026073CBBA8DE161D /* ArchitectureComment.swift */; };
+		BAE809C550116887B41361D4 /* IBMPlexMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B542CDC94713BEC56A1D516 /* IBMPlexMono-Regular.ttf */; };
+		C17FD6B84DD1C025A88E9A34 /* SignalDependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE457336BD68BD36A9BFBE0 /* SignalDependencyFactory.swift */; };
+		C4BAA43F2B30E55D48BCA8ED /* DailyIntakeDisplayModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6E7F2A0C0C6C2308642CA9 /* DailyIntakeDisplayModels.swift */; };
+		C8E186BF099F5790957625EB /* BarcodeCaptureModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683FBA9CAE64CC11920F16E9 /* BarcodeCaptureModule.swift */; };
+		CBC661284DC2FACC1088F4CC /* OnboardingSequencePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA70ADB23CB44EFF2B8FE12 /* OnboardingSequencePresenter.swift */; };
+		D556012153590A853A0BA8FC /* OnboardingSequenceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CDBE4D45937C12E1464F2D /* OnboardingSequenceInteractor.swift */; };
+		D6D06190AC2407ECB19A709E /* SignalArchiveBinaryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAB77167886F1E93C59197B /* SignalArchiveBinaryStore.swift */; };
+		D8A8E2F972F0C654D0E841C7 /* EuropeanArticleNumberNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2305DA7FCBED204BA1B9F45E /* EuropeanArticleNumberNormalizer.swift */; };
+		DAB7D0408CA6F0598F3DDE41 /* DailyIntakeDisplayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76DB9F9DDE4C3EA25BED4F8 /* DailyIntakeDisplayInteractor.swift */; };
+		DDB14503B8F1D8ED0016E786 /* ProductMerchandiseDetailModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6337024BBA6D0B029E9D11D /* ProductMerchandiseDetailModule.swift */; };
+		E17378EF6FAE25F99A4BA54B /* IBMPlexMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5FF279100D3CE5D0CA8585C /* IBMPlexMono-Bold.ttf */; };
+		EB6D41104E2646C6F4E6F454 /* OnboardingSequenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33D4735E3B0C2DE7E203189 /* OnboardingSequenceView.swift */; };
+		EF0941F7F3130CCE94DA568F /* OnboardingSequenceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3667AE77513747651598E79E /* OnboardingSequenceModels.swift */; };
+		F6250154D963D921149B5A79 /* NutrientPortionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A354BD32AE632E38B45EED /* NutrientPortionCalculator.swift */; };
+		F78FB8765571CFC03B6D9EA9 /* DailyIntakeDisplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC4233FEB8D89A0072AA66 /* DailyIntakeDisplayScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1E0AE9F6539A69545E04F2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E53119056DEA0EEFBEA8816 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EA8B3D5D472E2C779BB164B;
+			remoteInfo = RawSignal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008DB5536568496FB052BAC1 /* GoalRevisionModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRevisionModule.swift; sourceTree = "<group>"; };
+		0C1FB224CB8B3B268E636D0A /* CatalogSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogSearchInteractor.swift; sourceTree = "<group>"; };
+		0F6E7F2A0C0C6C2308642CA9 /* DailyIntakeDisplayModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyIntakeDisplayModels.swift; sourceTree = "<group>"; };
+		106695E188BEEF539BC10760 /* SignalLaunchPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalLaunchPad.swift; sourceTree = "<group>"; };
+		1AE1F5910D6FADF27A35A657 /* WishLedgerModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishLedgerModule.swift; sourceTree = "<group>"; };
+		1CAB77167886F1E93C59197B /* SignalArchiveBinaryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalArchiveBinaryStore.swift; sourceTree = "<group>"; };
+		21DDD89EBAC43305CC423E56 /* GridCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCipher.swift; sourceTree = "<group>"; };
+		2305DA7FCBED204BA1B9F45E /* EuropeanArticleNumberNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuropeanArticleNumberNormalizer.swift; sourceTree = "<group>"; };
+		2B8D65D026073CBBA8DE161D /* ArchitectureComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureComment.swift; sourceTree = "<group>"; };
+		2BA70ADB23CB44EFF2B8FE12 /* OnboardingSequencePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSequencePresenter.swift; sourceTree = "<group>"; };
+		3667AE77513747651598E79E /* OnboardingSequenceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSequenceModels.swift; sourceTree = "<group>"; };
+		45F295607AB7EAF4B62C8CE1 /* SlotAssignmentModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotAssignmentModule.swift; sourceTree = "<group>"; };
+		482D9772ACC84715AE17AE80 /* PreferenceConfigurationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceConfigurationModule.swift; sourceTree = "<group>"; };
+		49A354BD32AE632E38B45EED /* NutrientPortionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientPortionCalculator.swift; sourceTree = "<group>"; };
+		55541279862FBB5A72689D29 /* RawSignalApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawSignalApplicationDelegate.swift; sourceTree = "<group>"; };
+		56D03F7FD07E3B73E16B6E85 /* ConsumedLogModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumedLogModule.swift; sourceTree = "<group>"; };
+		683FBA9CAE64CC11920F16E9 /* BarcodeCaptureModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeCaptureModule.swift; sourceTree = "<group>"; };
+		6C2A89D1983B87C915697CB1 /* CatalogSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogSearchView.swift; sourceTree = "<group>"; };
+		776DF70495EC4DA667BDD2D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		78D3219C178A1AF16F4391A9 /* DailyIntakeDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyIntakeDisplayView.swift; sourceTree = "<group>"; };
+		7B542CDC94713BEC56A1D516 /* IBMPlexMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Regular.ttf"; sourceTree = "<group>"; };
+		7CAECAF9A36C47B5792B58FD /* RawSignalTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = RawSignalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8028A593B3B74906630855CE /* SignalCanvasHostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalCanvasHostController.swift; sourceTree = "<group>"; };
+		911C32C58813CC11C46F72B1 /* SignalGridTransitionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalGridTransitionFactory.swift; sourceTree = "<group>"; };
+		94EC4233FEB8D89A0072AA66 /* DailyIntakeDisplayScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyIntakeDisplayScene.swift; sourceTree = "<group>"; };
+		988FE05FCC6351D799519E21 /* LICENSE */ = {isa = PBXFileReference; path = LICENSE; sourceTree = "<group>"; };
+		993D1DD738A3C2C9A4AF392C /* SignalHorizonPlanModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalHorizonPlanModule.swift; sourceTree = "<group>"; };
+		9AE457336BD68BD36A9BFBE0 /* SignalDependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalDependencyFactory.swift; sourceTree = "<group>"; };
+		9D0C45D61896E893A52482BF /* SimulatorShelfSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorShelfSeeder.swift; sourceTree = "<group>"; };
+		9FB15A6FF2C68DFC022A4022 /* OnboardingSequenceScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSequenceScene.swift; sourceTree = "<group>"; };
+		A8A0B1F0DCB889F04CEC7207 /* DailyIntakeDisplayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyIntakeDisplayPresenter.swift; sourceTree = "<group>"; };
+		ABCD054FAA75909DBF98046A /* BrutalistVisualSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrutalistVisualSystem.swift; sourceTree = "<group>"; };
+		B0CDBE4D45937C12E1464F2D /* OnboardingSequenceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSequenceInteractor.swift; sourceTree = "<group>"; };
+		B33D4735E3B0C2DE7E203189 /* OnboardingSequenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSequenceView.swift; sourceTree = "<group>"; };
+		B3F71BE72F24E7A41D078178 /* BrutalistChromeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrutalistChromeViews.swift; sourceTree = "<group>"; };
+		B47772313BBC46F9633311EA /* RawSignalInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawSignalInteractorTests.swift; sourceTree = "<group>"; };
+		B6337024BBA6D0B029E9D11D /* ProductMerchandiseDetailModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductMerchandiseDetailModule.swift; sourceTree = "<group>"; };
+		B76DB9F9DDE4C3EA25BED4F8 /* DailyIntakeDisplayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyIntakeDisplayInteractor.swift; sourceTree = "<group>"; };
+		BF9C98DFC3B4BF549B703F18 /* RawSignal.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = RawSignal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23E0C6AF582090DA64365B4 /* SignalDomainEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalDomainEntities.swift; sourceTree = "<group>"; };
+		C9B459CAAB840367B610D621 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		D02C2B3A30AD3ADE713BF9F3 /* CatalogSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogSearchPresenter.swift; sourceTree = "<group>"; };
+		D8C5981A8AD29FB9F7BD376D /* CatalogSearchScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogSearchScene.swift; sourceTree = "<group>"; };
+		DFAD1A7264F5AC34BA3A8E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5FF279100D3CE5D0CA8585C /* IBMPlexMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Bold.ttf"; sourceTree = "<group>"; };
+		EC15E3CA5BD5E68F8F4E3B32 /* CatalogSearchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogSearchModels.swift; sourceTree = "<group>"; };
+		F4BA4D0979CACDD65BB7E8F4 /* OpenFoodFactsCatalogGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFoodFactsCatalogGateway.swift; sourceTree = "<group>"; };
+		F98B23AC0B197DAC11070C1D /* IBMPlexMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Medium.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29C1A76BC3C90AF5953676D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781D3B274190799353C9CB55 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D47AB634EB18EA0FD4C7CA9 /* CatalogSearch */ = {
+			isa = PBXGroup;
+			children = (
+				0C1FB224CB8B3B268E636D0A /* CatalogSearchInteractor.swift */,
+				EC15E3CA5BD5E68F8F4E3B32 /* CatalogSearchModels.swift */,
+				D02C2B3A30AD3ADE713BF9F3 /* CatalogSearchPresenter.swift */,
+				D8C5981A8AD29FB9F7BD376D /* CatalogSearchScene.swift */,
+				6C2A89D1983B87C915697CB1 /* CatalogSearchView.swift */,
+			);
+			path = CatalogSearch;
+			sourceTree = "<group>";
+		};
+		32405B7183F9050FDEC64072 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				B3F71BE72F24E7A41D078178 /* BrutalistChromeViews.swift */,
+				ABCD054FAA75909DBF98046A /* BrutalistVisualSystem.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		3773641851F43A205D623D0A /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				F4BA4D0979CACDD65BB7E8F4 /* OpenFoodFactsCatalogGateway.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		38628CAB18818E8B68279FDE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E3E87321FA5A0DA073B91CD7 /* Calculation */,
+				3773641851F43A205D623D0A /* Catalog */,
+				6329001FBABC1DD6150FF279 /* Entities */,
+				F21A532F772B80638E0C6829 /* Persistence */,
+				B1A3C822DA720142DF9F7A37 /* Seed */,
+				32405B7183F9050FDEC64072 /* Theme */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3872AC77CC9187477AAC7C85 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2B8D65D026073CBBA8DE161D /* ArchitectureComment.swift */,
+				21DDD89EBAC43305CC423E56 /* GridCipher.swift */,
+				55541279862FBB5A72689D29 /* RawSignalApplicationDelegate.swift */,
+				8028A593B3B74906630855CE /* SignalCanvasHostController.swift */,
+				9AE457336BD68BD36A9BFBE0 /* SignalDependencyFactory.swift */,
+				911C32C58813CC11C46F72B1 /* SignalGridTransitionFactory.swift */,
+				106695E188BEEF539BC10760 /* SignalLaunchPad.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		421047E2696FE88EEB6FD0A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD1A7264F5AC34BA3A8E95 /* Assets.xcassets */,
+				4932929BE122151252236544 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4932929BE122151252236544 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E5FF279100D3CE5D0CA8585C /* IBMPlexMono-Bold.ttf */,
+				F98B23AC0B197DAC11070C1D /* IBMPlexMono-Medium.ttf */,
+				7B542CDC94713BEC56A1D516 /* IBMPlexMono-Regular.ttf */,
+				988FE05FCC6351D799519E21 /* LICENSE */,
+				C9B459CAAB840367B610D621 /* OFL.txt */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4B9EBC0265666E6BBFB0D6A4 /* WishLedger */ = {
+			isa = PBXGroup;
+			children = (
+				1AE1F5910D6FADF27A35A657 /* WishLedgerModule.swift */,
+			);
+			path = WishLedger;
+			sourceTree = "<group>";
+		};
+		6329001FBABC1DD6150FF279 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C23E0C6AF582090DA64365B4 /* SignalDomainEntities.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		67D1EFB45C36E8B96FCE4B75 /* PreferenceConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				482D9772ACC84715AE17AE80 /* PreferenceConfigurationModule.swift */,
+			);
+			path = PreferenceConfiguration;
+			sourceTree = "<group>";
+		};
+		6BE252E2589B7BCC18F7EA71 /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				7065579F8C778C0D6946935A /* BarcodeCapture */,
+				2D47AB634EB18EA0FD4C7CA9 /* CatalogSearch */,
+				C99B0E0DBE07C2083BD26EB9 /* ConsumedLog */,
+				8294553A6605B44FA53EE4E2 /* DailyIntake */,
+				91CBFCCEF9BD9C28691E736A /* ProductDetail */,
+				888141BE1D832964744C7310 /* SignalPlan */,
+				BD86D79E50FCA8F59A3FA57D /* SlotAssignment */,
+				4B9EBC0265666E6BBFB0D6A4 /* WishLedger */,
+			);
+			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		6E41F257443E5CFFCD041100 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B0CDBE4D45937C12E1464F2D /* OnboardingSequenceInteractor.swift */,
+				3667AE77513747651598E79E /* OnboardingSequenceModels.swift */,
+				2BA70ADB23CB44EFF2B8FE12 /* OnboardingSequencePresenter.swift */,
+				9FB15A6FF2C68DFC022A4022 /* OnboardingSequenceScene.swift */,
+				B33D4735E3B0C2DE7E203189 /* OnboardingSequenceView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		7065579F8C778C0D6946935A /* BarcodeCapture */ = {
+			isa = PBXGroup;
+			children = (
+				683FBA9CAE64CC11920F16E9 /* BarcodeCaptureModule.swift */,
+			);
+			path = BarcodeCapture;
+			sourceTree = "<group>";
+		};
+		78F476387B3A267181C988AA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B15F7EC517BF5CFA4701C09A /* GoalRevision */,
+				67D1EFB45C36E8B96FCE4B75 /* PreferenceConfiguration */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8294553A6605B44FA53EE4E2 /* DailyIntake */ = {
+			isa = PBXGroup;
+			children = (
+				B76DB9F9DDE4C3EA25BED4F8 /* DailyIntakeDisplayInteractor.swift */,
+				0F6E7F2A0C0C6C2308642CA9 /* DailyIntakeDisplayModels.swift */,
+				A8A0B1F0DCB889F04CEC7207 /* DailyIntakeDisplayPresenter.swift */,
+				94EC4233FEB8D89A0072AA66 /* DailyIntakeDisplayScene.swift */,
+				78D3219C178A1AF16F4391A9 /* DailyIntakeDisplayView.swift */,
+			);
+			path = DailyIntake;
+			sourceTree = "<group>";
+		};
+		87BF4A42EEBE567E86EC0606 /* RawSignal */ = {
+			isa = PBXGroup;
+			children = (
+				3872AC77CC9187477AAC7C85 /* Application */,
+				6BE252E2589B7BCC18F7EA71 /* MainFlow */,
+				6E41F257443E5CFFCD041100 /* Onboarding */,
+				421047E2696FE88EEB6FD0A3 /* Resources */,
+				78F476387B3A267181C988AA /* Settings */,
+				38628CAB18818E8B68279FDE /* Shared */,
+				C458DFA3E5973D91852DA2EB /* Supporting */,
+			);
+			path = RawSignal;
+			sourceTree = "<group>";
+		};
+		888141BE1D832964744C7310 /* SignalPlan */ = {
+			isa = PBXGroup;
+			children = (
+				993D1DD738A3C2C9A4AF392C /* SignalHorizonPlanModule.swift */,
+			);
+			path = SignalPlan;
+			sourceTree = "<group>";
+		};
+		91CBFCCEF9BD9C28691E736A /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B6337024BBA6D0B029E9D11D /* ProductMerchandiseDetailModule.swift */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		9584C1886BFCDD752A971CFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF9C98DFC3B4BF549B703F18 /* RawSignal.app */,
+				7CAECAF9A36C47B5792B58FD /* RawSignalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B15F7EC517BF5CFA4701C09A /* GoalRevision */ = {
+			isa = PBXGroup;
+			children = (
+				008DB5536568496FB052BAC1 /* GoalRevisionModule.swift */,
+			);
+			path = GoalRevision;
+			sourceTree = "<group>";
+		};
+		B1A3C822DA720142DF9F7A37 /* Seed */ = {
+			isa = PBXGroup;
+			children = (
+				9D0C45D61896E893A52482BF /* SimulatorShelfSeeder.swift */,
+			);
+			path = Seed;
+			sourceTree = "<group>";
+		};
+		BC474405D76EADE1C5F738F0 /* RawSignalTests */ = {
+			isa = PBXGroup;
+			children = (
+				B47772313BBC46F9633311EA /* RawSignalInteractorTests.swift */,
+			);
+			path = RawSignalTests;
+			sourceTree = "<group>";
+		};
+		BD86D79E50FCA8F59A3FA57D /* SlotAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				45F295607AB7EAF4B62C8CE1 /* SlotAssignmentModule.swift */,
+			);
+			path = SlotAssignment;
+			sourceTree = "<group>";
+		};
+		C458DFA3E5973D91852DA2EB /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				776DF70495EC4DA667BDD2D5 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		C99B0E0DBE07C2083BD26EB9 /* ConsumedLog */ = {
+			isa = PBXGroup;
+			children = (
+				56D03F7FD07E3B73E16B6E85 /* ConsumedLogModule.swift */,
+			);
+			path = ConsumedLog;
+			sourceTree = "<group>";
+		};
+		E3E87321FA5A0DA073B91CD7 /* Calculation */ = {
+			isa = PBXGroup;
+			children = (
+				2305DA7FCBED204BA1B9F45E /* EuropeanArticleNumberNormalizer.swift */,
+				49A354BD32AE632E38B45EED /* NutrientPortionCalculator.swift */,
+			);
+			path = Calculation;
+			sourceTree = "<group>";
+		};
+		F21A532F772B80638E0C6829 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				1CAB77167886F1E93C59197B /* SignalArchiveBinaryStore.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		FBE07078EE14E11949734FF8 = {
+			isa = PBXGroup;
+			children = (
+				87BF4A42EEBE567E86EC0606 /* RawSignal */,
+				BC474405D76EADE1C5F738F0 /* RawSignalTests */,
+				9584C1886BFCDD752A971CFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42679CF1AEFF70DC05063BBF /* RawSignalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E9563F4E0987255E0B197F9 /* Build configuration list for PBXNativeTarget "RawSignalTests" */;
+			buildPhases = (
+				A84DDE9AB27314EFC483B284 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E6163E35E1BA0744FA94438 /* PBXTargetDependency */,
+			);
+			name = RawSignalTests;
+			packageProductDependencies = (
+			);
+			productName = RawSignalTests;
+			productReference = 7CAECAF9A36C47B5792B58FD /* RawSignalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6EA8B3D5D472E2C779BB164B /* RawSignal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95740EEC036A3121967B492 /* Build configuration list for PBXNativeTarget "RawSignal" */;
+			buildPhases = (
+				139672522079B8C53BDD4557 /* Sources */,
+				43D8B93490382EC27423C88C /* Resources */,
+				29C1A76BC3C90AF5953676D7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RawSignal;
+			packageProductDependencies = (
+				44478B42A230D0C4D062A6F5 /* Alamofire */,
+			);
+			productName = RawSignal;
+			productReference = BF9C98DFC3B4BF549B703F18 /* RawSignal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E53119056DEA0EEFBEA8816 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					42679CF1AEFF70DC05063BBF = {
+						ProvisioningStyle = Automatic;
+					};
+					6EA8B3D5D472E2C779BB164B = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1178DE80C4E8C26237D5F939 /* Build configuration list for PBXProject "RawSignal" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = FBE07078EE14E11949734FF8;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A1DD139F88FF0313F014C458 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9584C1886BFCDD752A971CFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EA8B3D5D472E2C779BB164B /* RawSignal */,
+				42679CF1AEFF70DC05063BBF /* RawSignalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43D8B93490382EC27423C88C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A65B0B8EA0BB28B07D622E3 /* Assets.xcassets in Resources */,
+				E17378EF6FAE25F99A4BA54B /* IBMPlexMono-Bold.ttf in Resources */,
+				82ACD8C00ABFF353A03750C4 /* IBMPlexMono-Medium.ttf in Resources */,
+				BAE809C550116887B41361D4 /* IBMPlexMono-Regular.ttf in Resources */,
+				64F515EF10DFB03EFB57FC8E /* OFL.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		139672522079B8C53BDD4557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45C6C52FD90E99082D86AD6 /* ArchitectureComment.swift in Sources */,
+				C8E186BF099F5790957625EB /* BarcodeCaptureModule.swift in Sources */,
+				B1C3C0C1830BDFA5E61933D3 /* BrutalistChromeViews.swift in Sources */,
+				3CC90DE79D7D2929CBEF9275 /* BrutalistVisualSystem.swift in Sources */,
+				535DE248C96EBB2D6CB121CA /* CatalogSearchInteractor.swift in Sources */,
+				727F3DDF3C9366129688A877 /* CatalogSearchModels.swift in Sources */,
+				28347B23941837C1F1719EA8 /* CatalogSearchPresenter.swift in Sources */,
+				84C64A974E0D698C8C43765F /* CatalogSearchScene.swift in Sources */,
+				2B661515A41CAA058096B45F /* CatalogSearchView.swift in Sources */,
+				09463F32D6EA316F2727EFDC /* ConsumedLogModule.swift in Sources */,
+				DAB7D0408CA6F0598F3DDE41 /* DailyIntakeDisplayInteractor.swift in Sources */,
+				C4BAA43F2B30E55D48BCA8ED /* DailyIntakeDisplayModels.swift in Sources */,
+				5F4FE3452C204A924E7DA179 /* DailyIntakeDisplayPresenter.swift in Sources */,
+				F78FB8765571CFC03B6D9EA9 /* DailyIntakeDisplayScene.swift in Sources */,
+				3A33868F27F81C8C3D0A08DC /* DailyIntakeDisplayView.swift in Sources */,
+				D8A8E2F972F0C654D0E841C7 /* EuropeanArticleNumberNormalizer.swift in Sources */,
+				3D80620F8253220FE8D95953 /* GoalRevisionModule.swift in Sources */,
+				344B22F49347D78BEBCE2423 /* GridCipher.swift in Sources */,
+				F6250154D963D921149B5A79 /* NutrientPortionCalculator.swift in Sources */,
+				D556012153590A853A0BA8FC /* OnboardingSequenceInteractor.swift in Sources */,
+				EF0941F7F3130CCE94DA568F /* OnboardingSequenceModels.swift in Sources */,
+				CBC661284DC2FACC1088F4CC /* OnboardingSequencePresenter.swift in Sources */,
+				148740CD1D7EC35DF7A112AA /* OnboardingSequenceScene.swift in Sources */,
+				EB6D41104E2646C6F4E6F454 /* OnboardingSequenceView.swift in Sources */,
+				287BB47CC711A40BFC94F6C9 /* OpenFoodFactsCatalogGateway.swift in Sources */,
+				A7C0FE9C60D00E63122C0266 /* PreferenceConfigurationModule.swift in Sources */,
+				DDB14503B8F1D8ED0016E786 /* ProductMerchandiseDetailModule.swift in Sources */,
+				8A955D8F3F0FEFDE14FEAC8E /* RawSignalApplicationDelegate.swift in Sources */,
+				D6D06190AC2407ECB19A709E /* SignalArchiveBinaryStore.swift in Sources */,
+				9F60F2B53D29C0BFB0E18070 /* SignalCanvasHostController.swift in Sources */,
+				C17FD6B84DD1C025A88E9A34 /* SignalDependencyFactory.swift in Sources */,
+				1D9247D81D9D265212B2EF48 /* SignalDomainEntities.swift in Sources */,
+				7C14142E819E7106F5AC24D5 /* SignalGridTransitionFactory.swift in Sources */,
+				A9C5D4CFA47BA274207A03F0 /* SignalHorizonPlanModule.swift in Sources */,
+				5611CAAFC1D91A19A168F21F /* SignalLaunchPad.swift in Sources */,
+				5B48C7F1FD2BF4D4AAC7EB0B /* SimulatorShelfSeeder.swift in Sources */,
+				3860299B96CF02520D8485A0 /* SlotAssignmentModule.swift in Sources */,
+				3F3B5F9730D15F7E8F01E17A /* WishLedgerModule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84DDE9AB27314EFC483B284 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A188C32A33C075DE8B3CAA7 /* RawSignalInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E6163E35E1BA0744FA94438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EA8B3D5D472E2C779BB164B /* RawSignal */;
+			targetProxy = D1E0AE9F6539A69545E04F2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3A8026872B99A9414F7CAB6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.2;
+			};
+			name = Debug;
+		};
+		5D9D76062E1CC615FD55A97F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RawSignal/Supporting/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RawSignal;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "RawSignal captures barcode pulses so the grid can lock a product from the live camera feed.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rawsignal.grid;
+				PRODUCT_NAME = RawSignal;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A72DC26BB45259F8CF001D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.2;
+			};
+			name = Release;
+		};
+		B20822EB8AEBAE51CDC8B293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rawsignal.grid.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RawSignal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RawSignal";
+			};
+			name = Debug;
+		};
+		B4D729F425E9F9660AFD07F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rawsignal.grid.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RawSignal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RawSignal";
+			};
+			name = Release;
+		};
+		F31B03B6D2519D72EAE7002C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RawSignal/Supporting/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RawSignal;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "RawSignal captures barcode pulses so the grid can lock a product from the live camera feed.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rawsignal.grid;
+				PRODUCT_NAME = RawSignal;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1178DE80C4E8C26237D5F939 /* Build configuration list for PBXProject "RawSignal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8026872B99A9414F7CAB6D /* Debug */,
+				A72DC26BB45259F8CF001D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8E9563F4E0987255E0B197F9 /* Build configuration list for PBXNativeTarget "RawSignalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20822EB8AEBAE51CDC8B293 /* Debug */,
+				B4D729F425E9F9660AFD07F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D95740EEC036A3121967B492 /* Build configuration list for PBXNativeTarget "RawSignal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F31B03B6D2519D72EAE7002C /* Debug */,
+				5D9D76062E1CC615FD55A97F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1DD139F88FF0313F014C458 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wrandecima-bit/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		44478B42A230D0C4D062A6F5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1DD139F88FF0313F014C458 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4E53119056DEA0EEFBEA8816 /* Project object */;
+}
