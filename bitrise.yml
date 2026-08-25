@@ -190,6 +190,61 @@ workflows:
         inputs:
         - only_testing: "$BITRISE_TEST_SHARDS_PATH/$BITRISE_IO_PARALLEL_INDEX"
         - xctestrun: "$BITRISE_TEST_BUNDLE_PATH/all_tests.xctestrun"
+  deliver_metadata:
+    summary: Upload App Store metadata and submit for review.
+    description: Reads fastlane/metadata from the repository and sends it to
+      App Store Connect. The binary is uploaded by archive_and_export_app, so
+      this workflow carries only the store listing and the review submission.
+    steps:
+    - git-clone@8: {}
+    - script@1:
+        title: Check metadata is present
+        inputs:
+        - content: |
+                #!/bin/bash
+                set -euo pipefail
+                cd "$BITRISE_SOURCE_DIR"
+
+                if [ ! -d fastlane/metadata ]; then
+                  echo "No fastlane/metadata in the repository — run 'gf metadata generate' first." >&2
+                  exit 1
+                fi
+
+                echo "Metadata files:"
+                find fastlane/metadata -type f -name '*.txt' | sort
+
+                if [ ! -f fastlane/Deliverfile ]; then
+                  echo "No fastlane/Deliverfile — run 'gf delivery install' first." >&2
+                  exit 1
+                fi
+    - script@1:
+        title: Age rating, pricing, availability
+        inputs:
+        - content: |
+                #!/bin/bash
+                set -euo pipefail
+                cd "$BITRISE_SOURCE_DIR"
+
+                # Age rating, price and territories — deliver cannot set any of these.
+                pip3 install --quiet --disable-pip-version-check requests cryptography
+                python3 fastlane/asc_storeconfig.py
+    - script@1:
+        title: fastlane deliver
+        inputs:
+        - content: |
+                #!/bin/bash
+                set -euo pipefail
+                cd "$BITRISE_SOURCE_DIR"
+
+                # The Deliverfile reads these from the environment; they come from the app's Bitrise secrets.
+                export APP_BUNDLE_ID ASC_KEY_ID ASC_ISSUER_ID ASC_API_KEY_CONTENT
+
+                if ! command -v fastlane >/dev/null 2>&1; then
+                  gem install fastlane --no-document
+                fi
+
+                fastlane deliver --verbose
+    - deploy-to-bitrise-io@2: {}
 meta:
   bitrise.io:
     stack: osx-xcode-26.6.x

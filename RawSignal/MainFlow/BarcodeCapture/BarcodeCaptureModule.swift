@@ -1,7 +1,6 @@
-import AVFoundation
+@preconcurrency import AVFoundation
 import SwiftUI
 import UIKit
-import Vision
 
 enum BarcodeCaptureModels {
     enum ResolveCode {
@@ -104,12 +103,12 @@ struct PulseBarcodeScannerRepresentable: UIViewRepresentable {
         coordinator.teardown()
     }
 
-    final class Coordinator: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, @unchecked Sendable {
+    final class Coordinator: NSObject, AVCaptureMetadataOutputObjectsDelegate, @unchecked Sendable {
         var onRawCode: (String) -> Void
-        private let session = AVCaptureSession()
-        private let output = AVCaptureVideoDataOutput()
-        private let visionQueue = DispatchQueue(label: "com.rawsignal.grid.vision")
+        nonisolated(unsafe) private let session = AVCaptureSession()
+        private let sessionQueue = DispatchQueue(label: "com.rawsignal.grid.scan")
         private var lastEmit: TimeInterval = 0
+        private var didMount = false
 
         init(onRawCode: @escaping @Sendable (String) -> Void) {
             self.onRawCode = onRawCode
@@ -118,47 +117,59 @@ struct PulseBarcodeScannerRepresentable: UIViewRepresentable {
         func attach(to view: PulseBarcodePreviewView) {
             view.previewLayer.session = session
             view.previewLayer.videoGravity = .resizeAspectFill
-            guard let device = AVCaptureDevice.default(for: .video),
-                  let input = try? AVCaptureDeviceInput(device: device),
-                  session.canAddInput(input) else { return }
-            session.addInput(input)
-            output.setSampleBufferDelegate(self, queue: visionQueue)
-            output.alwaysDiscardsLateVideoFrames = true
-            if session.canAddOutput(output) {
-                session.addOutput(output)
-            }
-            visionQueue.async { [session] in
-                session.startRunning()
+            switch AVCaptureDevice.authorizationStatus(for: .video) {
+            case .authorized:
+                mount()
+            case .notDetermined:
+                AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
+                    if granted {
+                        DispatchQueue.main.async { self?.mount() }
+                    }
+                }
+            default:
+                break
             }
         }
 
         func teardown() {
-            visionQueue.async { [session] in
-                session.stopRunning()
+            sessionQueue.async { [session] in
+                if session.isRunning {
+                    session.stopRunning()
+                }
             }
         }
 
-        func captureOutput(
-            _ output: AVCaptureOutput,
-            didOutput sampleBuffer: CMSampleBuffer,
+        private func mount() {
+            guard !didMount else { return }
+            didMount = true
+            guard let device = AVCaptureDevice.default(for: .video),
+                  let input = try? AVCaptureDeviceInput(device: device),
+                  session.canAddInput(input) else { return }
+            session.addInput(input)
+            let output = AVCaptureMetadataOutput()
+            guard session.canAddOutput(output) else { return }
+            session.addOutput(output)
+            output.setMetadataObjectsDelegate(self, queue: .main)
+            let wanted: [AVMetadataObject.ObjectType] = [.ean8, .ean13, .upce, .code128, .qr]
+            output.metadataObjectTypes = wanted.filter { output.availableMetadataObjectTypes.contains($0) }
+            sessionQueue.async { [session] in
+                if !session.isRunning {
+                    session.startRunning()
+                }
+            }
+        }
+
+        func metadataOutput(
+            _ output: AVCaptureMetadataOutput,
+            didOutput metadataObjects: [AVMetadataObject],
             from connection: AVCaptureConnection
         ) {
             let now = Date().timeIntervalSince1970
-            guard now - lastEmit > 0.9,
-                  let pixel = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
-            let request = VNDetectBarcodesRequest { [weak self] request, _ in
-                guard let payload = (request.results as? [VNBarcodeObservation])?
-                    .compactMap(\.payloadStringValue)
-                    .first,
-                    let coordinator = self else { return }
-                coordinator.lastEmit = now
-                let callback = coordinator.onRawCode
-                DispatchQueue.main.async {
-                    callback(payload)
-                }
-            }
-            request.symbologies = [.ean8, .ean13, .upce, .code128, .qr]
-            try? VNImageRequestHandler(cvPixelBuffer: pixel, options: [:]).perform([request])
+            guard now - lastEmit > 0.9 else { return }
+            guard let object = metadataObjects.first as? AVMetadataMachineReadableCodeObject,
+                  let payload = object.stringValue else { return }
+            lastEmit = now
+            onRawCode(payload)
         }
     }
 }

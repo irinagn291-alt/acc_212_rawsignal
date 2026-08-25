@@ -90,7 +90,7 @@
 		8028A593B3B74906630855CE /* SignalCanvasHostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalCanvasHostController.swift; sourceTree = "<group>"; };
 		911C32C58813CC11C46F72B1 /* SignalGridTransitionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalGridTransitionFactory.swift; sourceTree = "<group>"; };
 		94EC4233FEB8D89A0072AA66 /* DailyIntakeDisplayScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyIntakeDisplayScene.swift; sourceTree = "<group>"; };
-		988FE05FCC6351D799519E21 /* LICENSE */ = {isa = PBXFileReference; path = LICENSE; sourceTree = "<group>"; };
+		988FE05FCC6351D799519E21 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		993D1DD738A3C2C9A4AF392C /* SignalHorizonPlanModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalHorizonPlanModule.swift; sourceTree = "<group>"; };
 		9AE457336BD68BD36A9BFBE0 /* SignalDependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalDependencyFactory.swift; sourceTree = "<group>"; };
 		9D0C45D61896E893A52482BF /* SimulatorShelfSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorShelfSeeder.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		B47772313BBC46F9633311EA /* RawSignalInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawSignalInteractorTests.swift; sourceTree = "<group>"; };
 		B6337024BBA6D0B029E9D11D /* ProductMerchandiseDetailModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductMerchandiseDetailModule.swift; sourceTree = "<group>"; };
 		B76DB9F9DDE4C3EA25BED4F8 /* DailyIntakeDisplayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyIntakeDisplayInteractor.swift; sourceTree = "<group>"; };
-		BF9C98DFC3B4BF549B703F18 /* RawSignal.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = RawSignal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9C98DFC3B4BF549B703F18 /* RawSignal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RawSignal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23E0C6AF582090DA64365B4 /* SignalDomainEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalDomainEntities.swift; sourceTree = "<group>"; };
 		C9B459CAAB840367B610D621 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		D02C2B3A30AD3ADE713BF9F3 /* CatalogSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogSearchPresenter.swift; sourceTree = "<group>"; };
@@ -641,7 +641,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rawsignal.grid;
 				PRODUCT_NAME = RawSignal;
 				SDKROOT = iphoneos;
@@ -769,7 +769,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rawsignal.grid;
 				PRODUCT_NAME = RawSignal;
 				SDKROOT = iphoneos;
