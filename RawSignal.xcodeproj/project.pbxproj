@@ -631,6 +631,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RawSignal/Supporting/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = RawSignal;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSCameraUsageDescription = "RawSignal captures barcode pulses so the grid can lock a product from the live camera feed.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
@@ -759,6 +760,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RawSignal/Supporting/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = RawSignal;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSCameraUsageDescription = "RawSignal captures barcode pulses so the grid can lock a product from the live camera feed.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
