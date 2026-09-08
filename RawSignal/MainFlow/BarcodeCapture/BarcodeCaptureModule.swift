@@ -114,6 +114,7 @@ struct PulseBarcodeScannerRepresentable: UIViewRepresentable {
             self.onRawCode = onRawCode
         }
 
+        @MainActor
         func attach(to view: PulseBarcodePreviewView) {
             view.previewLayer.session = session
             view.previewLayer.videoGravity = .resizeAspectFill
